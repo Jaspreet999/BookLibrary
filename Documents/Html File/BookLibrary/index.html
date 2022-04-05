@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-08"/>
+        <title>Book library</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+
+    <body>
+        <header>
+            <h1>My Book Library</h1>
+            <p class="headerText">This is a book library where you can store your favourite books or their reding status</p>
+        </header>
+
+        <div class="newBook" id="addBooks">
+            <div class="BookName">
+                <label>Book</label>
+                <br>
+                <input type="text" id="BookName">
+            </div>
+            
+            <div class="authorName">
+                <label>Author</label>
+                <br>
+                <input type="text" id="AuthorName">
+            </div>
+            
+            <div class="status">
+                <label>Status</label>
+                <br>
+                <select id="Status" name="option">
+                    <option value="read">Read</option>
+                    <option value="not read">Not Read</option>
+                </select>    
+            </div>
+        </div>
+
+        <button class="addBook" id="addBook" >Add Book</button>
+
+        <div class="bookList" >
+                <table id="tableData">
+                    <tr>
+                        <th>Name</th>
+                        <th>Auhtor</th>
+                        <th>status</th>
+                        <th> </th>
+                    </tr>
+
+                    <tbody id="booklist">
+                        <tr>
+                            <td>c++</td>
+                            <td>shivansh</td>
+                            <td><button class="status-button">not read</button></td>
+                            <td><button class="delete">delete</button></td>
+                        </tr>
+                    </tbody>  
+                </table>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
